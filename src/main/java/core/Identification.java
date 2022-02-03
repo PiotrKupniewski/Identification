@@ -1,3 +1,12 @@
+package core;
+
+import listener.RawOdds;
+import listener.RawOddsListener;
+import result.OddsWrapper;
+import result.OutputCreator;
+import validator.ValidatedOdds;
+import validator.Validator;
+
 import java.util.List;
 
 public class Identification {

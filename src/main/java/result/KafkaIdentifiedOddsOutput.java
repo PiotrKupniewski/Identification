@@ -1,3 +1,7 @@
+package result;
+
+import validator.ValidatedOdds;
+
 import java.util.List;
 import java.util.stream.Collectors;
 

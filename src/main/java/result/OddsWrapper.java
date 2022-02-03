@@ -1,3 +1,5 @@
+package result;
+
 public class OddsWrapper {
 
   private final String id;
@@ -10,6 +12,6 @@ public class OddsWrapper {
 
   @Override
   public String toString() {
-    return "OddsWrapper{" + "id='" + id + '\'' + ", odds=" + odds + '}';
+    return "result.OddsWrapper{" + "id='" + id + '\'' + ", odds=" + odds + '}';
   }
 }

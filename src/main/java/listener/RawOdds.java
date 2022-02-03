@@ -1,9 +1,11 @@
-public class ValidatedOdds {
+package listener;
+
+public class RawOdds {
 
   private final String id;
   private final Double odds;
 
-  public ValidatedOdds(String id, Double odds) {
+  public RawOdds(String id, Double odds) {
     this.id = id;
     this.odds = odds;
   }
