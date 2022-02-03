@@ -1,9 +1,9 @@
-public class RawOddsWrapper {
+public class RawOdds {
 
-  private String id;
-  private Double odds;
+  private final String id;
+  private final Double odds;
 
-  public RawOddsWrapper(String id, Double odds) {
+  public RawOdds(String id, Double odds) {
     this.id = id;
     this.odds = odds;
   }

@@ -1,5 +1,6 @@
 import java.util.Collection;
+import java.util.List;
 
-public interface Receiver {
-    Collection<RawOddsWrapper> processDataToValidation(Collection<RawOddsWrapper> rawOdds);
+public interface Validator {
+  List<ValidatedOdds> validate(Collection<RawOdds> rawOdds);
 }
