@@ -1,5 +1,20 @@
 public class Simulation {
   public static void main(String[] args) {
-    System.out.println("hello");
+
+    Identification identification = start();
+
+    var rawOdds = identification.startListening();
+    var validatedOdds = identification.validate(rawOdds);
+    var output = identification.createOutput(validatedOdds);
+
+    System.out.println(output);
+  }
+
+  public static Identification start(){
+    var kafkaRawListener = new KafkaRawListener();
+    var kafkaValidator = new KafkaValidator();
+    var outputCreator = new KafkaIdentifiedOddsOutput();
+
+    return new Identification(kafkaRawListener, kafkaValidator, outputCreator);
   }
 }
