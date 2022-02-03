@@ -1,4 +1,4 @@
-import core.Identification;
+import identification.Identification;
 import listener.KafkaRawListener;
 import result.KafkaIdentifiedOddsOutput;
 import validator.KafkaValidator;
