@@ -4,7 +4,8 @@ import result.OddsWrapper;
 import validator.ValidatedOdds;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public interface OutputCreator {
-    List<OddsWrapper> create(List<ValidatedOdds> validatedOdds);
+    List<OddsWrapper> create(Stream<ValidatedOdds> validatedOdds);
 }

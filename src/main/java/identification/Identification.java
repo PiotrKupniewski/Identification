@@ -8,6 +8,7 @@ import validator.ValidatedOdds;
 import validator.Validator;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Identification {
 
@@ -26,11 +27,11 @@ public class Identification {
     return listener.listenOnStream();
   }
 
-  public List<ValidatedOdds> validate(List<RawOdds> rawOdds) {
+  public Stream<ValidatedOdds> validate(List<RawOdds> rawOdds) {
     return validator.validate(rawOdds);
   }
 
-  public List<OddsWrapper> createOutput(List<ValidatedOdds> validatedOdds) {
+  public List<OddsWrapper> createOutput(Stream<ValidatedOdds> validatedOdds) {
     return outputCreator.create(validatedOdds);
   }
 }

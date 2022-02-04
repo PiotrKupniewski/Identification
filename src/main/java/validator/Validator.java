@@ -1,11 +1,10 @@
 package validator;
 
 import listener.RawOdds;
-import validator.ValidatedOdds;
 
 import java.util.Collection;
-import java.util.List;
+import java.util.stream.Stream;
 
 public interface Validator {
-  List<ValidatedOdds> validate(Collection<RawOdds> rawOdds);
+  Stream<ValidatedOdds> validate(Collection<RawOdds> rawOdds);
 }
